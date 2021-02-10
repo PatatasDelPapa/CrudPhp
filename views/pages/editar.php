@@ -48,6 +48,11 @@
     <?php 
         $actualizar = ControladorFormularios::ctrActualizarNota();
         
+        /*
+        Script para eliminar cache de los datos enviados y que además
+        crea una alerta para posteriormente redireccionar a la vista
+        de listado.
+        */
         if ($actualizar == "ok") {
             echo '<script> 
                     if ( window.history.replaceState ) {
