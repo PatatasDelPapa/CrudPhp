@@ -95,12 +95,12 @@
                         $_GET["pagina"] == "ingreso" || 
                         $_GET["pagina"] == "editar"
                     ) {
-                        include "pages/".$_GET["pagina"].".php";
+                        include "pages/".$_GET["pagina"].".vista.php";
                     } else {
-                        include "pages/error404.php";
+                        include "pages/error404.vista.php";
                     }
                 } else {
-                    include "pages/listado.php";
+                    include "pages/listado.vista.php";
                 }
             ?>
 
