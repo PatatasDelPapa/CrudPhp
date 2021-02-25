@@ -8,7 +8,11 @@
 
 ?>
 
+<!-- Se esta solicitando una nota valida? -->
+<?php if(isset($nota[$valor])): ?>
+<!-- Si, mostrar formulario de edición de nota -->
 <div>
+<!-- Formulario para editar notas existentes del sistema -->
 <form class="p-5 bg-light" method="POST">
 
     <div class="form-group">
@@ -20,7 +24,7 @@
                 <span class="input-group-text"><i class="fas fa-tasks"></i></span>
 
             </div>
-
+        
             <input type="text" class="form-control" value="<?php echo $nota["nombre"]; ?>" placeholder="Escriba el nombre" id="nombre" name="actualizarNombre">
 
         </div>
@@ -76,3 +80,9 @@
 
 </form>
 </div>
+<!-- Si no se solicito una nota existente en el sistema entonces mostrar error -->
+<?php else: ?> 
+    <?php
+        echo '<div class="alert alert-danger">La nota que intenta solicitar no existe</div>';
+    ?>
+<?php endif ?>
