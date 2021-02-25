@@ -69,6 +69,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php?pagina=listado">Listado</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?pagina=ingreso">Ingreso</a>
+                    </li>
                 <?php endif ?>
                 
 
