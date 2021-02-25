@@ -1,4 +1,5 @@
 <div>
+<!-- Formulario para ingresar nuevas notas al sistema -->
 <form class="p-5 bg-light" method="POST">
 
     <div class="form-group">
